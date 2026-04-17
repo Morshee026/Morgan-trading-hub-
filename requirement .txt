@@ -1,0 +1,409 @@
+app.py
+
+`python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+Page setup
+st.setpageconfig(
+    page_title="Morgan Trading Hub",
+    pageicon="assets/morganicon.png",
+    layout="wide"
+)
+
+Title and intro
+st.title("📊 Morgan Trading Hub")
+st.write("Digit Bias Analyzer | Psychology Analyzer | Performance Tracker")
+
+--- Section 1: Digit Bias Analyzer ---
+st.header("Digit Bias Analyzer")
+digits = list(range(10))
+frequency = np.random.randint(5, 20, size=10)  # placeholder demo data
+df = pd.DataFrame({"Digit": digits, "Frequency": frequency})
+fig = px.bar(df, x="Digit", y="Frequency", title="Digit Bias Frequency")
+st.plotlychart(fig, usecontainer_width=True)
+
+--- Section 2: Psychology Analyzer ---
+st.header("Psychology Analyzer")
+st.write("This section will show MACD, RSI, and candle psychology insights.")
+
+Example placeholder chart
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+st.pyplot(plt)
+
+--- Section 3: Performance Tracker ---
+st.header("Performance Tracker")
+st.write("Track trading performance and discipline checklist here.")
+performance_data = pd.DataFrame({
+    "Trade": ["Over 2", "Over 3", "Under 7", "Under 8"],
+    "Result": ["Win", "Loss", "Win", "Loss"]
+})
+st.table(performance_data)
+
+Footer
+st.markdown("---")
+st.markdown("Morgan Prince | 📞 0793 487 816 | 🇰🇪")
+`app.py
+
+`python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+Page setup
+st.setpageconfig(
+    page_title="Morgan Trading Hub",
+    pageicon="assets/morganicon.png",
+    layout="wide"
+)
+
+Title and intro
+st.title("📊 Morgan Trading Hub")
+st.write("Digit Bias Analyzer | Psychology Analyzer | Performance Tracker")
+
+--- Section 1: Digit Bias Analyzer ---
+st.header("Digit Bias Analyzer")
+digits = list(range(10))
+frequency = np.random.randint(5, 20, size=10)  # placeholder demo data
+df = pd.DataFrame({"Digit": digits, "Frequency": frequency})
+fig = px.bar(df, x="Digit", y="Frequency", title="Digit Bias Frequency")
+st.plotlychart(fig, usecontainer_width=True)
+
+--- Section 2: Psychology Analyzer ---
+st.header("Psychology Analyzer")
+st.write("This section will show MACD, RSI, and candle psychology insights.")
+
+Example placeholder chart
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+st.pyplot(plt)
+
+--- Section 3: Performance Tracker ---
+st.header("Performance Tracker")
+st.write("Track trading performance and discipline checklist here.")
+performance_data = pd.DataFrame({
+    "Trade": ["Over 2", "Over 3", "Under 7", "Under 8"],
+    "Result": ["Win", "Loss", "Win", "Loss"]
+})
+st.table(performance_data)
+
+Footer
+st.markdown("---")
+st.markdown("Morgan Prince | 📞 0793 487 816 | 🇰🇪")
+`app.py
+
+`python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+Page setup
+st.setpageconfig(
+    page_title="Morgan Trading Hub",
+    pageicon="assets/morganicon.png",
+    layout="wide"
+)
+
+Title and intro
+st.title("📊 Morgan Trading Hub")
+st.write("Digit Bias Analyzer | Psychology Analyzer | Performance Tracker")
+
+--- Section 1: Digit Bias Analyzer ---
+st.header("Digit Bias Analyzer")
+digits = list(range(10))
+frequency = np.random.randint(5, 20, size=10)  # placeholder demo data
+df = pd.DataFrame({"Digit": digits, "Frequency": frequency})
+fig = px.bar(df, x="Digit", y="Frequency", title="Digit Bias Frequency")
+st.plotlychart(fig, usecontainer_width=True)
+
+--- Section 2: Psychology Analyzer ---
+st.header("Psychology Analyzer")
+st.write("This section will show MACD, RSI, and candle psychology insights.")
+
+Example placeholder chart
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+st.pyplot(plt)
+
+--- Section 3: Performance Tracker ---
+st.header("Performance Tracker")
+st.write("Track trading performance and discipline checklist here.")
+performance_data = pd.DataFrame({
+    "Trade": ["Over 2", "Over 3", "Under 7", "Under 8"],
+    "Result": ["Win", "Loss", "Win", "Loss"]
+})
+st.table(performance_data)
+
+Footer
+st.markdown("---")
+st.markdown("Morgan Prince | 📞 0793 487 816 | 🇰🇪")
+`app.py
+
+`python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+Page setup
+st.setpageconfig(
+    page_title="Morgan Trading Hub",
+    pageicon="assets/morganicon.png",
+    layout="wide"
+)
+
+Title and intro
+st.title("📊 Morgan Trading Hub")
+st.write("Digit Bias Analyzer | Psychology Analyzer | Performance Tracker")
+
+--- Section 1: Digit Bias Analyzer ---
+st.header("Digit Bias Analyzer")
+digits = list(range(10))
+frequency = np.random.randint(5, 20, size=10)  # placeholder demo data
+df = pd.DataFrame({"Digit": digits, "Frequency": frequency})
+fig = px.bar(df, x="Digit", y="Frequency", title="Digit Bias Frequency")
+st.plotlychart(fig, usecontainer_width=True)
+
+--- Section 2: Psychology Analyzer ---
+st.header("Psychology Analyzer")
+st.write("This section will show MACD, RSI, and candle psychology insights.")
+
+Example placeholder chart
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+st.pyplot(plt)
+
+--- Section 3: Performance Tracker ---
+st.header("Performance Tracker")
+st.write("Track trading performance and discipline checklist here.")
+performance_data = pd.DataFrame({
+    "Trade": ["Over 2", "Over 3", "Under 7", "Under 8"],
+    "Result": ["Win", "Loss", "Win", "Loss"]
+})
+st.table(performance_data)
+
+Footer
+st.markdown("---")
+st.markdown("Morgan Prince | 📞 0793 487 816 | 🇰🇪")
+`app.py
+
+`python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+Page setup
+st.setpageconfig(
+    page_title="Morgan Trading Hub",
+    pageicon="assets/morganicon.png",
+    layout="wide"
+)
+
+Title and intro
+st.title("📊 Morgan Trading Hub")
+st.write("Digit Bias Analyzer | Psychology Analyzer | Performance Tracker")
+
+--- Section 1: Digit Bias Analyzer ---
+st.header("Digit Bias Analyzer")
+digits = list(range(10))
+frequency = np.random.randint(5, 20, size=10)  # placeholder demo data
+df = pd.DataFrame({"Digit": digits, "Frequency": frequency})
+fig = px.bar(df, x="Digit", y="Frequency", title="Digit Bias Frequency")
+st.plotlychart(fig, usecontainer_width=True)
+
+--- Section 2: Psychology Analyzer ---
+st.header("Psychology Analyzer")
+st.write("This section will show MACD, RSI, and candle psychology insights.")
+
+Example placeholder chart
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+st.pyplot(plt)
+
+--- Section 3: Performance Tracker ---
+st.header("Performance Tracker")
+st.write("Track trading performance and discipline checklist here.")
+performance_data = pd.DataFrame({
+    "Trade": ["Over 2", "Over 3", "Under 7", "Under 8"],
+    "Result": ["Win", "Loss", "Win", "Loss"]
+})
+st.table(performance_data)
+
+Footer
+st.markdown("---")
+st.markdown("Morgan Prince | 📞 0793 487 816 | 🇰🇪")
+`app.py
+
+`python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+Page setup
+st.setpageconfig(
+    page_title="Morgan Trading Hub",
+    pageicon="assets/morganicon.png",
+    layout="wide"
+)
+
+Title and intro
+st.title("📊 Morgan Trading Hub")
+st.write("Digit Bias Analyzer | Psychology Analyzer | Performance Tracker")
+
+--- Section 1: Digit Bias Analyzer ---
+st.header("Digit Bias Analyzer")
+digits = list(range(10))
+frequency = np.random.randint(5, 20, size=10)  # placeholder demo data
+df = pd.DataFrame({"Digit": digits, "Frequency": frequency})
+fig = px.bar(df, x="Digit", y="Frequency", title="Digit Bias Frequency")
+st.plotlychart(fig, usecontainer_width=True)
+
+--- Section 2: Psychology Analyzer ---
+st.header("Psychology Analyzer")
+st.write("This section will show MACD, RSI, and candle psychology insights.")
+
+Example placeholder chart
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+st.pyplot(plt)
+
+--- Section 3: Performance Tracker ---
+st.header("Performance Tracker")
+st.write("Track trading performance and discipline checklist here.")
+performance_data = pd.DataFrame({
+    "Trade": ["Over 2", "Over 3", "Under 7", "Under 8"],
+    "Result": ["Win", "Loss", "Win", "Loss"]
+})
+st.table(performance_data)
+
+Footer
+st.markdown("---")
+st.markdown("Morgan Prince | 📞 0793 487 816 | 🇰🇪")
+`app.py
+
+`python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+Page setup
+st.setpageconfig(
+    page_title="Morgan Trading Hub",
+    pageicon="assets/morganicon.png",
+    layout="wide"
+)
+
+Title and intro
+st.title("📊 Morgan Trading Hub")
+st.write("Digit Bias Analyzer | Psychology Analyzer | Performance Tracker")
+
+--- Section 1: Digit Bias Analyzer ---
+st.header("Digit Bias Analyzer")
+digits = list(range(10))
+frequency = np.random.randint(5, 20, size=10)  # placeholder demo data
+df = pd.DataFrame({"Digit": digits, "Frequency": frequency})
+fig = px.bar(df, x="Digit", y="Frequency", title="Digit Bias Frequency")
+st.plotlychart(fig, usecontainer_width=True)
+
+--- Section 2: Psychology Analyzer ---
+st.header("Psychology Analyzer")
+st.write("This section will show MACD, RSI, and candle psychology insights.")
+
+Example placeholder chart
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+st.pyplot(plt)
+
+--- Section 3: Performance Tracker ---
+st.header("Performance Tracker")
+st.write("Track trading performance and discipline checklist here.")
+performance_data = pd.DataFrame({
+    "Trade": ["Over 2", "Over 3", "Under 7", "Under 8"],
+    "Result": ["Win", "Loss", "Win", "Loss"]
+})
+st.table(performance_data)
+
+Footer
+st.markdown("---")
+st.markdown("Morgan Prince | 📞 0793 487 816 | 🇰🇪")
+`app.py
+
+`python
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+Page setup
+st.setpageconfig(
+    page_title="Morgan Trading Hub",
+    pageicon="assets/morganicon.png",
+    layout="wide"
+)
+
+Title and intro
+st.title("📊 Morgan Trading Hub")
+st.write("Digit Bias Analyzer | Psychology Analyzer | Performance Tracker")
+
+--- Section 1: Digit Bias Analyzer ---
+st.header("Digit Bias Analyzer")
+digits = list(range(10))
+frequency = np.random.randint(5, 20, size=10)  # placeholder demo data
+df = pd.DataFrame({"Digit": digits, "Frequency": frequency})
+fig = px.bar(df, x="Digit", y="Frequency", title="Digit Bias Frequency")
+st.plotlychart(fig, usecontainer_width=True)
+
+--- Section 2: Psychology Analyzer ---
+st.header("Psychology Analyzer")
+st.write("This section will show MACD, RSI, and candle psychology insights.")
+
+Example placeholder chart
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+st.pyplot(plt)
+
+--- Section 3: Performance Tracker ---
+st.header("Performance Tracker")
+st.write("Track trading performance and discipline checklist here.")
+performance_data = pd.DataFrame({
+    "Trade": ["Over 2", "Over 3", "Under 7", "Under 8"],
+    "Result": ["Win", "Loss", "Win", "Loss"]
+})
+st.table(performance_data)
+
+Footer
+st.markdown("---")
+st.markdown("Morgan Prince | 📞 0793 487 816 | 🇰🇪")
+`

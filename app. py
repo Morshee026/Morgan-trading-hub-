@@ -1,0 +1,75 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+
+# ----------------------------
+# APP CONFIG
+# ----------------------------
+st.set_page_config(
+    page_title="Morgan Trading Hub",
+    page_icon="assets/morgan_icon.png",
+    layout="wide"
+)
+
+# ----------------------------
+# SPLASH / HEADER
+# ----------------------------
+st.image("assets/morgan_splash.png", use_column_width=True)
+st.markdown("<h1 style='text-align:center;color:#2196F3;'>Morgan Trading Hub</h1>", unsafe_allow_html=True)
+st.caption("Analyze • Alert • Win")
+st.markdown("<p style='text-align:center;'>Empowering disciplined traders across Kenya and beyond</p>", unsafe_allow_html=True)
+
+# Poster-style checklist
+st.markdown("### Trading Discipline Checklist")
+rules = [
+    "Control My Bias",
+    "Stay Calm & Focused",
+    "Follow the Alerts",
+    "Manage My Risks",
+    "Only Trade Digit Matches",
+    "Track My Performance"
+]
+for rule in rules:
+    st.markdown(f"- ✅ {rule}")
+
+st.markdown("---")
+st.markdown("**Morgan Prince** | 📞 0793 487 816 | 🇰🇪 Kenya")
+
+# ----------------------------
+# FEATURE 1: DIGIT BIAS ANALYZER
+# ----------------------------
+st.subheader("Digit Bias Analyzer")
+digits = list(range(10))
+bias_values = np.random.randint(0, 100, size=10)
+df_bias = pd.DataFrame({"Digit": digits, "Bias %": bias_values})
+fig_bias = px.bar(df_bias, x="Digit", y="Bias %", color="Bias %", title="Digit Bias Strength")
+st.plotly_chart(fig_bias, use_container_width=True)
+
+# ----------------------------
+# FEATURE 2: PSYCHOLOGY ANALYZER
+# ----------------------------
+st.subheader("Psychology Analyzer")
+market_states = ["Calm", "Emotional", "Overheated"]
+state = np.random.choice(market_states)
+st.write(f"**Market State:** {state}")
+
+# ----------------------------
+# FEATURE 3: PERFORMANCE TRACKER
+# ----------------------------
+st.subheader("Performance Tracker")
+wins = np.random.randint(50, 100)
+losses = 100 - wins
+df_perf = pd.DataFrame({"Result": ["Wins", "Losses"], "Count": [wins, losses]})
+fig_perf = px.pie(df_perf, names="Result", values="Count", title="Win vs Loss Ratio")
+st.plotly_chart(fig_perf, use_container_width=True)
+
+accuracy = np.linspace(50, 100, 10) + np.random.randn(10) * 2
+fig_acc = px.line(y=accuracy, title="Accuracy Trend")
+st.plotly_chart(fig_acc, use_container_width=True)
+
+# ----------------------------
+# FOOTER
+# ----------------------------
+st.markdown("---")
+st.markdown("<p style='text-align:center;'>© 2026 Morgan Trading Hub | Developed by Morgan Prince</p>", unsafe_allow_html=True)
